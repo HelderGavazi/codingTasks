@@ -1,0 +1,107 @@
+"""
+hyperiondev - Software Engineering (Fundamentals)
+Task 15 - "Software Design"
+Author: Helder P - HP24010013265
+Date: 03/04/2024
+
+Description: Practical Task 1 - "use_case_diagram.txt"
+"""
+
+
+Let's start with the use case diagram:
+
+### Use Case Diagram for Task Manager Application:
+```
+                                  +------------------------------------+
+                                  |         Task Manager App          |
+                                  +------------------------------------+
+                                           |
+                            +--------------+--------------+
+                            |                             |
+             +--------------+---------------+  +----------+------------+
+             |                              |  |                         |
+      +------+---------+         +---------+--+---------+       +-------+-------+
+      | User           |         | Admin                |       | System          |
+      +----------------+         +----------------------+       +-----------------+
+      | Register/Login |         | View Users           |       | Manage Files    |
+      | View Tasks     |         | Add User             |       +-----------------+
+      | Add Task       |         | Delete User          |
+      | Edit Task      |         | View Tasks           |
+      | Delete Task    |         | Edit Task            |
+      | Set Priority   |         | Delete Task          |
+      | Set Due Date   |         | View Task Logs       |
+      | Search Tasks   |         | Clear Task Logs      |
+      | Filter Tasks   |         +----------------------+
+      +----------------+
+```
+
+### Sequence Diagram for Task Manager Application:
+```
+                      +-------------------+                  +------------------------+
+                      | User Interface    |                  | Application Logic      |
+                      +-------------------+                  +------------------------+
+                               |                                        |
+                               |       User interacts with UI            |
+                               |---------------------------------------->|
+                               |                                        |
+                               |       UI triggers action                |
+                               |<----------------------------------------|
+                               |                                        |
+                               |       Application processes action     |
+                               |---------------------------------------->|
+                               |                                        |
+                               |       Application interacts with file   |
+                               |---------------------------------------->|
+                               |                                        |
+                               |       File operation performed          |
+                               |<----------------------------------------|
+                               |                                        |
+                               |       Result returned to UI             |
+                               |<----------------------------------------|
+```
+
+### Concerns Outline for Each Component:
+
+#### User Interface Component:
+- Responsiveness and User Experience (UI/UX)
+- Input validation and error handling
+- Interface design and layout
+- Integration with backend functionality
+
+#### Application Logic Component:
+- Business logic implementation
+- Task management algorithms
+- User authentication and authorization
+- File handling and data persistence
+- Error handling and logging
+
+#### File System Component:
+- File storage structure and organization
+- Read/write operations efficiency
+- Error handling for file operations
+- Data integrity and security measures
+
+### Class Diagram for Task Manager Application:
+```
++------------------+          +--------------+         +---------------+
+|     User         |          |    Task      |         |   TaskManager |
++------------------+          +--------------+         +---------------+
+| - username       |          | - taskId     |         | - users       |
+| - password       |          | - title      |         | - tasks       |
+| - email          |          | - description|         +---------------+
+| - tasks          |          | - dueDate    |
++------------------+          | - priority   |
+                               +--------------+
+```
+
+### CRUD Matrix for Task Manager Application:
+```
++--------------+-----------+---------+----------+--------+
+| Entity       |   Create  |  Read   |  Update  | Delete |
++--------------+-----------+---------+----------+--------+
+| User         |    Yes    |   Yes   |   Yes    |  Yes   |
+| Task         |    Yes    |   Yes   |   Yes    |  Yes   |
++--------------+-----------+---------+----------+--------+
+```
+
+This should give you a comprehensive overview of the design and structure of the task manager application. Let me know if you need further details or assistance!

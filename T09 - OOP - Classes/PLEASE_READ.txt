@@ -1,0 +1,8 @@
+Hi Shingai,
+
+I am writing this note to inform you that due to an unfortunate mistake, I have uploaded the wrong (draft code) file to my Dropbox to be submitted as my [Practical Task: - " email simulator"] work.
+ 
+Please accept my apologies for the inconvenience caused and I hope you can again review my updated work (email.py).
+
+Many thanks
+Helder

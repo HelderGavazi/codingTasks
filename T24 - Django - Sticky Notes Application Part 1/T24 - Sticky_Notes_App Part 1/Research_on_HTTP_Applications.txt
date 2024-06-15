@@ -1,0 +1,45 @@
+Research on HTTP Applications
+
+Preserving State Across Multiple Request-Response Cycles
+HTTP is a stateless protocol, meaning each request from a client to a server is independent and has no knowledge of previous requests. To manage state across multiple interactions, web applications employ several techniques:
+
+1. Cookies:
+
+Small pieces of data stored on the client's browser.
+Server sends cookies with HTTP responses, which are then stored by the client.
+Cookies are sent back to the server with each subsequent request.
+Commonly used to store session identifiers.
+2. Sessions:
+
+A way to store user-specific data on the server side.
+Typically, a session ID is stored in a cookie on the client side.
+The session ID is used to retrieve session data from the server for each request.
+Useful for storing user information like authentication status and user preferences.
+3. Tokens:
+
+JSON Web Tokens (JWT) are a popular method for stateless authentication.
+Tokens are created and signed by the server, then sent to the client.
+Clients send the token with each request, usually in an HTTP header.
+The server verifies the token to authenticate the user.
+4. Local Storage and Session Storage:
+
+HTML5 provides local storage and session storage for persisting data in the browser.
+Local storage persists data even after the browser is closed, whereas session storage is cleared when the session ends.
+Not suitable for sensitive data as it can be accessed by JavaScript.
+User Authentication:
+
+Involves verifying the identity of a user.
+Typically done through login forms where users provide credentials (username/password).
+Upon successful authentication, a session or token is created and associated with the user.
+For subsequent requests, the session or token is used to verify the user's identity without needing to re-enter credentials.
+Session Management:
+
+Manages the lifecycle and data associated with user sessions.
+Includes creating sessions at login, maintaining session state, and destroying sessions at logout.
+Important for securing web applications to prevent unauthorized access and session hijacking.
+Example: Django Sessions and Authentication:
+
+Django uses a session framework to store session data in the database and manages session cookies.
+The django.contrib.sessions middleware handles the process of sending and receiving cookies.
+Django's authentication system uses sessions to manage logged-in users.
+Provides decorators and middleware to protect views and ensure only authenticated users can access certain parts of the application.

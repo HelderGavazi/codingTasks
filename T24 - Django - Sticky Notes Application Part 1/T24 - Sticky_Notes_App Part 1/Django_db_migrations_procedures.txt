@@ -1,0 +1,70 @@
+### Document Database Migrations to Server-Based Relational Databases
+
+#### Performing Django Database Migrations to MariaDB
+
+MariaDB is a popular open-source relational database that can be used as the backend for Django applications. The following steps outline how to migrate a Django application to use MariaDB:
+
+**1. Install MariaDB:**
+   - Ensure MariaDB server is installed and running.
+   - Install the MariaDB client libraries. On Ubuntu, you can use:
+     ```sh
+     sudo apt-get install mariadb-server mariadb-client
+     ```
+
+**2. Install Django MariaDB Backend:**
+   - Install the `mysqlclient` Python package, which Django uses to connect to MariaDB:
+     ```sh
+     pip install mysqlclient
+     ```
+
+**3. Configure Database Settings in Django:**
+   - Edit the `DATABASES` setting in `settings.py` to point to the MariaDB instance:
+     ```python
+     DATABASES = {
+         'default': {
+             'ENGINE': 'django.db.backends.mysql',
+             'NAME': 'your_database_name',
+             'USER': 'your_database_user',
+             'PASSWORD': 'your_database_password',
+             'HOST': 'localhost',
+             'PORT': '3306',
+         }
+     }
+     ```
+
+**4. Create the Database:**
+   - Use the MariaDB command line or a database management tool to create the database:
+     ```sql
+     CREATE DATABASE your_database_name;
+     ```
+
+**5. Apply Migrations:**
+   - Run Django migrations to create the database schema:
+     ```sh
+     python manage.py migrate
+     ```
+
+**6. Check the Connection:**
+   - Verify that the connection to MariaDB is working by running the Django development server and checking the application:
+     ```sh
+     python manage.py runserver
+     ```
+
+**7. Database Backup and Restore (Optional):**
+   - Backup the existing SQLite (or other database) data:
+     ```sh
+     python manage.py dumpdata > db_backup.json
+     ```
+   - Load the data into the new MariaDB database:
+     ```sh
+     python manage.py loaddata db_backup.json
+     ```
+
+**8. Ensure Compatibility:**
+   - Check for any compatibility issues between MariaDB and your Django models.
+   - Make any necessary adjustments to model fields or database configurations.
+
+**9. Update Database Settings for Production:**
+   - For production deployment, ensure secure and optimized settings, such as setting up proper user privileges, configuring connection pooling, and enabling SSL for database connections.
+
+By following these steps, you can successfully migrate your Django application to use MariaDB as the backend relational database.

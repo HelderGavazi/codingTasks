@@ -1,6 +1,6 @@
 # CodingTasks Repository
 
-Welcome to my GitHub repository, **CodingTasks**! Here, you'll find a collection of practical coding tasks that I've completed during my Software Engineering (Fundamentals) course. This repository showcases my dedication to mastering the fundamentals of software development, as well as my ability to apply theoretical knowledge to real-world scenarios.
+Welcome to my GitHub repository, **CodingTasks**! Here, you'll find a collection of practical coding tasks that I've completed during my [Software Engineering (Fundamentals) course.](https://www.hyperiondev.com/portfolio/HP24010013265/) This repository showcases my dedication to mastering the fundamentals of software development, as well as my ability to apply theoretical knowledge to real-world scenarios.
 
 ## About Me
 
@@ -62,7 +62,7 @@ Writing robust and error-free code is a critical skill for any software engineer
 Feel free to explore the different tasks and projects in this repository. Each task is organized into its own directory, containing the source code, documentation, and test cases. To get started, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/helderpaixao/codingTasks.git
+git clone https://github.com/HelderGavazi/codingTasks.git
 ```
 
 Navigate to the task you're interested in, and follow the instructions in the README file within each directory. I've provided detailed documentation and comments within the code to help you understand the implementation and logic behind each task.
@@ -73,7 +73,7 @@ I welcome contributions and feedback from the community! If you find any issues 
 
 ## Connect with Me
 
-I'm always open to connecting with fellow developers and enthusiasts. You can find me on [LinkedIn](https://www.linkedin.com/in/helderpaixao) and [Twitter](https://twitter.com/helderpaixao). Let's collaborate and innovate together!
+I'm always open to connecting with fellow developers and enthusiasts. You can find me on [LinkedIn](https://www.linkedin.com/in/helderpaixao). Let's collaborate and innovate together!
 
 Thank you for visiting my repository. Happy coding!
 
@@ -81,5 +81,5 @@ Thank you for visiting my repository. Happy coding!
 
 Helder Paixao  
 Aspiring Software Engineer  
-[GitHub Profile](https://github.com/helderpaixao)
+[GitHub Profile](https://github.com/HelderGavazi)
 

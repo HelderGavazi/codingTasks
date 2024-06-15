@@ -12,16 +12,16 @@ As I continue my journey towards becoming a proficient software engineer, I am e
 
 This repository is a testament to my learning and growth in the field of software engineering. Each project and task contained within represents a step forward in my understanding and application of key concepts. Below, I've detailed some of the highlights of this repository:
 
-### Task 1: Basic Algorithms
+### 1: Basic Algorithms
 
-In this task, I tackled fundamental algorithms that are essential for any software engineer. From sorting algorithms like QuickSort and MergeSort to searching algorithms such as Binary Search, this section demonstrates my ability to implement and optimize basic algorithms.
+I tackled fundamental algorithms that are essential for any software engineer. From sorting algorithms like QuickSort and MergeSort to searching algorithms such as Binary Search, this section demonstrates my ability to implement and optimize basic algorithms.
 
 **Key Highlights:**
 - Implemented and tested various sorting algorithms.
 - Analyzed the time and space complexity of different algorithms.
 - Developed a clear understanding of algorithmic efficiency.
 
-### Task 2: Data Structures
+### 2: Data Structures
 
 Understanding and utilizing data structures is crucial for efficient software development. In this task, I explored a variety of data structures including arrays, linked lists, stacks, queues, and trees. 
 
@@ -30,7 +30,7 @@ Understanding and utilizing data structures is crucial for efficient software de
 - Demonstrated usage scenarios for each data structure.
 - Compared the performance and use cases of different data structures.
 
-### Task 3: Object-Oriented Programming (OOP)
+### 3: Object-Oriented Programming (OOP)
 
 OOP is a fundamental paradigm in software engineering that promotes modular and reusable code. This task involved designing and implementing various classes and objects, showcasing principles like inheritance, encapsulation, polymorphism, and abstraction.
 
@@ -39,7 +39,7 @@ OOP is a fundamental paradigm in software engineering that promotes modular and 
 - Applied OOP principles to solve practical problems.
 - Created reusable and maintainable code.
 
-### Task 4: Software Design Patterns
+### 4: Software Design Patterns
 
 Design patterns are proven solutions to common software design problems. In this section, I explored various design patterns such as Singleton, Factory, Observer, and Strategy, and implemented them in practical scenarios.
 
@@ -48,7 +48,7 @@ Design patterns are proven solutions to common software design problems. In this
 - Analyzed the benefits and trade-offs of each pattern.
 - Integrated design patterns into existing codebases.
 
-### Task 5: Testing and Debugging
+### 5: Testing and Debugging
 
 Writing robust and error-free code is a critical skill for any software engineer. This task focused on developing unit tests, debugging strategies, and best practices for ensuring code quality.
 
